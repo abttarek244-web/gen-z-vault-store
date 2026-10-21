@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07162a">
+<title>Gen-Z Vault | Fashion Store</title>
+<style>
+:root{--navy:#07162a;--navy2:#102b49;--gold:#e6d3a6;--cream:#f7f5ef;--ink:#172033;--muted:#697386}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Bengali",Arial,sans-serif;background:var(--cream);color:var(--ink)}
+a{color:inherit;text-decoration:none}.top{background:var(--navy);color:white;text-align:center;padding:8px 12px;font-size:12px;letter-spacing:.3px}
+header{background:var(--navy);color:white;padding:18px 5%;display:flex;align-items:center;justify-content:space-between;gap:14px;border-bottom:1px solid #ffffff20}
+.brand{font-weight:900;font-size:22px;letter-spacing:1px}.brand span{color:var(--gold)}nav{display:flex;gap:18px;font-size:14px}nav a:hover{color:var(--gold)}
+.hero{background:linear-gradient(120deg,#07162a,#102b49 70%,#1d3853);color:white;padding:58px 6% 52px;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+.kicker{color:var(--gold);font-size:12px;letter-spacing:3px;font-weight:800}.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.08;margin:14px 0}.hero p{color:#d7dfeb;max-width:520px;line-height:1.8}.btn{display:inline-block;background:var(--gold);color:var(--navy);font-weight:800;padding:13px 19px;border-radius:7px;margin-top:12px;border:0;cursor:pointer}.btn.outline{background:transparent;color:white;border:1px solid #ffffff70;margin-left:8px}
+.hero-art{min-height:230px;border:1px solid #e6d3a655;border-radius:18px;background:radial-gradient(circle at 50% 35%,#31506b,#0a1b30 65%);display:flex;align-items:center;justify-content:center;text-align:center;padding:20px}.hero-art strong{font-size:clamp(30px,5vw,52px);letter-spacing:3px;color:var(--gold);display:block}.hero-art small{letter-spacing:4px;color:#fff}
+section{padding:48px 5%}.section-head{text-align:center;margin-bottom:25px}.section-head small{color:#987d42;font-weight:800;letter-spacing:2px}.section-head h2{font-size:clamp(25px,4vw,36px);margin:8px 0}.section-head p{color:var(--muted);margin:0}
+.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.product{background:white;border-radius:13px;overflow:hidden;border:1px solid #e8e5dc;box-shadow:0 8px 22px #07162a0a}.product-art{height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#e7e8e9,#cfd5dc);color:#26384a;font-weight:900;font-size:23px;letter-spacing:2px}.product:nth-child(2) .product-art{background:linear-gradient(145deg,#d7dce2,#9eaab9)}.product:nth-child(3) .product-art{background:linear-gradient(145deg,#e7dfd0,#b7ad9b)}.product-info{padding:16px}.product-info h3{margin:0 0 7px;font-size:17px}.product-info p{color:var(--muted);font-size:13px;margin:0 0 12px}.price{font-weight:900;color:#102b49}.tag{font-size:11px;background:#f2ead6;color:#6d5520;padding:5px 8px;border-radius:30px;float:right}
+.about{background:#fff}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}.about h2{font-size:30px;margin:0 0 12px}.about p{line-height:1.8;color:var(--muted)}.feature{padding:20px;border:1px solid #e7e1d2;border-radius:12px;margin:9px 0;background:#fcfbf8}.feature b{display:block;margin-bottom:5px}
+.order{background:var(--navy);color:white}.order .section-head p{color:#cbd5e1}.order-box{max-width:650px;margin:auto;background:#fff;color:var(--ink);padding:23px;border-radius:14px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}input,select,textarea{width:100%;padding:12px;border:1px solid #d7dce3;border-radius:7px;font:inherit;background:#fff}textarea{min-height:80px;resize:vertical}.field{margin-bottom:13px}.form-grid .field{margin-bottom:0}.notice{font-size:12px;color:var(--muted);line-height:1.6;margin-top:12px}
+footer{background:#040d19;color:#cbd5e1;text-align:center;padding:25px 15px;font-size:13px}footer b{color:var(--gold)}.social{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:15px 0}.social a{border:1px solid #ffffff35;border-radius:25px;padding:8px 13px}
+@media(max-width:700px){header{padding:15px 4%;align-items:flex-start;flex-direction:column}nav{gap:14px;flex-wrap:wrap;font-size:13px}.hero{grid-template-columns:1fr;padding:42px 5%}.hero-art{min-height:170px}.products{grid-template-columns:1fr 1fr;gap:12px}.product-art{height:150px;font-size:17px}.product-info{padding:12px}.product-info h3{font-size:15px}.about-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.btn.outline{margin-left:0}section{padding:38px 4%}}
+@media(max-width:390px){.products{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="top">GEN-Z STYLE • EVERYDAY CONFIDENCE</div>
+<header>
+  <a class="brand" href="#home">GEN-Z <span>VAULT</span></a>
+  <nav><a href="#home">হোম</a><a href="#products">পণ্য</a><a href="#about">আমাদের সম্পর্কে</a><a href="#order">অর্ডার</a></nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div>
+    <div class="kicker">YOUR STYLE. YOUR STORY.</div>
+    <h1>স্টাইল হোক<br><span style="color:var(--gold)">নিজের মতো।</span></h1>
+    <p>Gen-Z Vault-এ স্বাগতম। তোমার প্রতিদিনের লুকের জন্য বেছে নাও পছন্দের ফ্যাশন। পণ্যের ছবি, দাম ও সাইজ দেখে অর্ডারের অনুরোধ পাঠাও।</p>
+    <a class="btn" href="#products">পণ্য দেখো</a>
+    <a class="btn outline" href="#order">অর্ডার করো</a>
+  </div>
+  <div class="hero-art"><div><strong>GEN-Z<br>VAULT</strong><small>PREMIUM STREETWEAR</small></div></div>
+</section>
+
+<section id="products">
+  <div class="section-head"><small>THE COLLECTION</small><h2>আমাদের পণ্য</h2><p>নিচের নমুনা পণ্যের নাম ও দাম নিজের পণ্য অনুযায়ী বদলে নাও।</p></div>
+  <div class="products">
+    <article class="product"><div class="product-art">T-SHIRT</div><div class="product-info"><span class="tag">POPULAR</span><h3>Classic T-Shirt</h3><p>আরামদায়ক দৈনন্দিন স্টাইল</p><div class="price">৳ 450</div><button class="btn" onclick="chooseProduct('Classic T-Shirt')">অর্ডার বেছে নাও</button></div></article>
+    <article class="product"><div class="product-art">OVERSIZED</div><div class="product-info"><span class="tag">TRENDING</span><h3>Oversized T-Shirt</h3><p>ট্রেন্ডি ও ক্যাজুয়াল লুক</p><div class="price">৳ 650</div><button class="btn" onclick="chooseProduct('Oversized T-Shirt')">অর্ডার বেছে নাও</button></div></article>
+    <article class="product"><div class="product-art">HOODIE</div><div class="product-info"><span class="tag">NEW</span><h3>Streetwear Hoodie</h3><p>স্টাইলিশ স্ট্রিটওয়্যার</p><div class="price">৳ 1,050</div><button class="btn" onclick="chooseProduct('Streetwear Hoodie')">অর্ডার বেছে নাও</button></div></article>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-grid">
+    <div><div class="kicker">ABOUT GEN-Z VAULT</div><h2>তোমার স্টাইলের নতুন ঠিকানা</h2><p>আমাদের লক্ষ্য হলো স্টাইল, আরাম এবং আত্মবিশ্বাসকে একসঙ্গে তুলে ধরা। এখানে নিজের ব্র্যান্ডের পরিচিতি, ডেলিভারি তথ্য, রিটার্ন নীতি এবং যোগাযোগের তথ্য যোগ করতে পারবে।</p></div>
+    <div><div class="feature"><b>✦ স্টাইলিশ কালেকশন</b><span>নিজের পণ্যের ছবি ও সঠিক বিবরণ যোগ করো।</span></div><div class="feature"><b>✦ সহজ অর্ডার</b><span>কাস্টমার অর্ডারের তথ্য ফর্মে দিতে পারবেন।</span></div><div class="feature"><b>✦ সরাসরি যোগাযোগ</b><span>WhatsApp নম্বর বা Facebook পেজের লিংক পরে যোগ করো।</span></div></div>
+  </div>
+</section>
+
+<section class="order" id="order">
+  <div class="section-head"><small>PLACE YOUR ORDER</small><h2>অর্ডারের অনুরোধ পাঠাও</h2><p>তথ্য পূরণ করে অর্ডারের মেসেজ তৈরি করো।</p></div>
+  <div class="order-box">
+    <form id="orderForm">
+      <div class="form-grid">
+        <div class="field"><label for="customer">তোমার নাম *</label><input id="customer" required placeholder="নাম লিখো"></div>
+        <div class="field"><label for="phone">মোবাইল নম্বর *</label><input id="phone" required inputmode="tel" placeholder="01XXXXXXXXX"></div>
+        <div class="field"><label for="product">পণ্য *</label><select id="product" required><option value="">পণ্য বেছে নাও</option><option>Classic T-Shirt</option><option>Oversized T-Shirt</option><option>Streetwear Hoodie</option></select></div>
+        <div class="field"><label for="size">সাইজ *</label><select id="size" required><option value="">সাইজ বেছে নাও</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select></div>
+      </div>
+      <div class="field" style="margin-top:13px"><label for="address">সম্পূর্ণ ঠিকানা *</label><textarea id="address" required placeholder="গ্রাম/এলাকা, উপজেলা, জেলা"></textarea></div>
+      <div class="field"><label for="notes">অতিরিক্ত তথ্য (ঐচ্ছিক)</label><input id="notes" placeholder="রং, পরিমাণ বা অন্য তথ্য"></div>
+      <button class="btn" type="submit">অর্ডার মেসেজ তৈরি করো</button>
+      <p class="notice">নোট: এই নমুনা সাইটে অর্ডার স্বয়ংক্রিয়ভাবে দোকানে জমা হয় না। নিচের বোতাম চাপলে মেসেজ কপি হবে; বিক্রেতার WhatsApp নম্বর যোগ করলে সরাসরি পাঠানোর সুবিধাও সেট করা যাবে।</p>
+      <div id="result" style="display:none;margin-top:12px;padding:12px;background:#f2f5f8;border-radius:8px;white-space:pre-wrap"></div>
+      <button class="btn" id="copyBtn" type="button" style="display:none">অর্ডার মেসেজ কপি করো</button><a class="btn" id="waOrderBtn" href="#" target="_blank" rel="noopener" style="display:none;margin-left:8px">WhatsApp-এ অর্ডার পাঠাও</a>
+    </form>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="brand">GEN-Z <span>VAULT</span></div>
+  <div class="social"><a href="#products">পণ্য দেখো</a><a href="#order">অর্ডার</a><a href="https://www.facebook.com/share/1C7kXXR6vR/" target="_blank" rel="noopener">Facebook পেজ</a><a href="https://wa.me/8801624370644" target="_blank" rel="noopener">WhatsApp-এ যোগাযোগ</a></div>
+  <p>© <span id="year"></span> Gen-Z Vault. All rights reserved.</p>
+  <p>WhatsApp: 01624370644</p><p>Facebook: <a href="https://www.facebook.com/share/1C7kXXR6vR/" target="_blank" rel="noopener">Gen-Z Vault Facebook পেজ</a></p>
+</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+function chooseProduct(name){document.getElementById('product').value=name;document.getElementById('order').scrollIntoView({behavior:'smooth'});}
+let orderMessage='';
+document.getElementById('orderForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ orderMessage='Gen-Z Vault অর্ডারের অনুরোধ\\nনাম: '+document.getElementById('customer').value+'\\nমোবাইল: '+document.getElementById('phone').value+'\\nপণ্য: '+document.getElementById('product').value+'\\nসাইজ: '+document.getElementById('size').value+'\\nঠিকানা: '+document.getElementById('address').value+'\\nঅতিরিক্ত তথ্য: '+document.getElementById('notes').value;
+ const result=document.getElementById('result');result.textContent=orderMessage+'\\n\\nনিচের বোতাম দিয়ে WhatsApp-এ অর্ডার পাঠাতে পারো।';result.style.display='block';document.getElementById('copyBtn').style.display='inline-block';const waBtn=document.getElementById('waOrderBtn');waBtn.href='https://wa.me/8801624370644?text='+encodeURIComponent(orderMessage);waBtn.style.display='inline-block';const waBtn=document.getElementById('waOrderBtn');waBtn.href='https://wa.me/8801624370644?text='+encodeURIComponent(orderMessage);waBtn.style.display='inline-block';
+});
+document.getElementById('copyBtn').addEventListener('click',async function(){
+ try{await navigator.clipboard.writeText(orderMessage);this.textContent='কপি হয়েছে ✓';}
+ catch(e){const area=document.createElement('textarea');area.value=orderMessage;document.body.appendChild(area);area.select();document.execCommand('copy');area.remove();this.textContent='কপি হয়েছে ✓';}
+});
+</script>
+</body>
+</html>
